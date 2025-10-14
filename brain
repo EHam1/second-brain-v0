@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+"""
+Convenience wrapper for Second Brain CLI.
+
+This allows you to run: ./brain add "memory"
+Instead of: python -m cli.brain add "memory"
+"""
+
+import sys
+from cli.brain import cli
+
+if __name__ == '__main__':
+    cli()
+
