@@ -1,10 +1,10 @@
-# 🎉 Build Complete!
+# Build Complete!
 
-## ✅ What We Built
+## What We Built
 
 Your **Second Brain v0** is ready! Here's what we created:
 
-### 📦 Core Components (RAG System)
+### Core Components (RAG System)
 
 1. **`config.py`** (3.1 KB)
    - All tunable parameters in one place
@@ -30,7 +30,7 @@ Your **Second Brain v0** is ready! Here's what we created:
    - Business logic orchestration
    - Complete RAG pipeline
 
-### 🖥️ User Interface
+### User Interface
 
 5. **`cli/brain.py`** (14.5 KB)
    - Beautiful CLI with Click
@@ -43,7 +43,7 @@ Your **Second Brain v0** is ready! Here's what we created:
    - Convenience launcher
    - Just run `./brain add "memory"`
 
-### 🧪 Testing
+### Testing
 
 7. **`tests/test_memory.py`** (11.2 KB)
    - Comprehensive test suite
@@ -55,7 +55,7 @@ Your **Second Brain v0** is ready! Here's what we created:
      - Real-world use cases (passport, moving house)
      - Edge cases
 
-### 📚 Documentation
+### Documentation
 
 8. **`ARCHITECTURE.md`** (12.0 KB)
    - Deep dive into RAG concepts
@@ -78,7 +78,7 @@ Your **Second Brain v0** is ready! Here's what we created:
     - Real usage patterns
     - Power user tips
 
-### 🔧 Supporting Files
+### Supporting Files
 
 11. **`requirements.txt`**
     - sentence-transformers==2.2.2
@@ -93,7 +93,7 @@ Your **Second Brain v0** is ready! Here's what we created:
 
 ---
 
-## 📊 Stats
+## Stats
 
 - **Total Lines of Code**: ~1,500+
 - **Files Created**: 12
@@ -103,7 +103,7 @@ Your **Second Brain v0** is ready! Here's what we created:
 
 ---
 
-## 🎯 Key Features Implemented
+## Key Features Implemented
 
 ✅ **Semantic Search**
 - Find memories by meaning, not just keywords
@@ -137,12 +137,12 @@ Your **Second Brain v0** is ready! Here's what we created:
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 ### 1. Install & Test (5 minutes)
 
 ```bash
-cd ~/Repositories/second-brain-v0
+cd ~/Repositories/external-brain-v0
 
 # Create virtual environment
 python3 -m venv venv
@@ -188,7 +188,7 @@ Edit `config.py` and experiment:
 
 ---
 
-## 🎓 What You'll Learn
+## What You'll Learn
 
 By exploring this codebase, you'll understand:
 
@@ -220,7 +220,7 @@ By exploring this codebase, you'll understand:
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 Once you're comfortable with the basics:
 
@@ -247,7 +247,7 @@ Once you're comfortable with the basics:
 
 ---
 
-## 📝 Architecture Highlights
+## Architecture Highlights
 
 ### The Hybrid Scoring Algorithm
 
@@ -290,7 +290,7 @@ Response: "passport in blue suitcase (Oct 13, 8:02 PM)"
 
 ---
 
-## 🐛 Known Limitations (By Design)
+## Known Limitations (By Design)
 
 1. **No LLM responses** (yet) - Returns raw memories, not conversational
 2. **No categories** (yet) - All memories in one space
@@ -302,7 +302,7 @@ These are features for future versions!
 
 ---
 
-## 🤝 Contributing Ideas
+## Contributing Ideas
 
 If you want to extend this:
 
@@ -326,7 +326,7 @@ If you want to extend this:
 
 ---
 
-## ✨ What Makes This Special
+## What Makes This Special
 
 1. **Learning-Focused**: Built to teach RAG concepts
 2. **Well-Documented**: 12KB of docs + extensive comments
@@ -336,7 +336,7 @@ If you want to extend this:
 
 ---
 
-## 🎊 You're Ready!
+## You're Ready!
 
 Your Second Brain is built and ready to use. Start with:
 
@@ -346,7 +346,7 @@ Your Second Brain is built and ready to use. Start with:
 
 Then check out the code, run the tests, and start customizing!
 
-**Happy coding and remembering! 🧠✨**
+**Happy coding and remembering!**
 
 ---
 
@@ -375,5 +375,5 @@ python core/memory_manager.py         # Test manager
 
 ---
 
-**Built with ❤️ for learning and productivity**
+**Built for learning and productivity**
 

@@ -1,11 +1,11 @@
 # Second Brain Architecture
 
-## 🎯 Purpose
+## Purpose
 This document explains how your semantic memory system works under the hood. Perfect for learning RAG (Retrieval Augmented Generation) concepts with a real, practical application.
 
 ---
 
-## 🏗️ High-Level Architecture
+## High-Level Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -36,7 +36,7 @@ This document explains how your semantic memory system works under the hood. Per
 
 ---
 
-## 📚 RAG Concepts Explained
+## RAG Concepts Explained
 
 ### What is RAG?
 **Retrieval Augmented Generation** = Retrieve relevant info + Generate response
@@ -47,7 +47,7 @@ For this "Lite" version, we're doing **RAG without the Generation**:
 
 ### The Three Core Components
 
-#### 1️⃣ **Embeddings** (The "Understanding" Layer)
+#### 1. **Embeddings** (The "Understanding" Layer)
 Converts text into mathematical vectors that capture meaning.
 
 ```python
@@ -65,7 +65,7 @@ Converts text into mathematical vectors that capture meaning.
 - Accurate enough for our use case
 - Fully local (no API calls)
 
-#### 2️⃣ **Vector Store** (The "Memory" Layer)
+#### 2. **Vector Store** (The "Memory" Layer)
 Stores memories with their embeddings for fast similarity search.
 
 ```python
@@ -84,7 +84,7 @@ Stores memories with their embeddings for fast similarity search.
 - Fast similarity search (finds nearest vectors)
 - Persistence between runs
 
-#### 3️⃣ **Hybrid Scoring** (The "Smart Recall" Layer)
+#### 3. **Hybrid Scoring** (The "Smart Recall" Layer)
 Combines semantic similarity + recency to find the best answer.
 
 ```python
@@ -112,7 +112,7 @@ Memory 2: "passport in red backpack" (1 day ago)
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 second-brain-v0/
@@ -140,7 +140,7 @@ second-brain-v0/
 
 ---
 
-## 🔄 Data Flow: Adding a Memory
+## Data Flow: Adding a Memory
 
 ```
 1. User Input
@@ -163,7 +163,7 @@ second-brain-v0/
 
 ---
 
-## 🔍 Data Flow: Recalling a Memory
+## Data Flow: Recalling a Memory
 
 ```
 1. User Query
@@ -190,7 +190,7 @@ second-brain-v0/
 
 ---
 
-## ⚙️ Configuration & Tuning
+## Configuration & Tuning
 
 All tunable parameters live in `config.py`:
 
@@ -226,7 +226,7 @@ You can experiment to find what works for your use case!
 
 ---
 
-## 🎯 Design Decisions
+## Design Decisions
 
 ### Why No "Update" Command?
 **Problem**: You move your passport from blue suitcase → red backpack.
@@ -260,7 +260,7 @@ Alternatives considered:
 
 ---
 
-## 🧪 Testing Strategy
+## Testing Strategy
 
 We'll test real-world scenarios:
 
@@ -293,7 +293,7 @@ We'll test real-world scenarios:
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 ### Phase 2: Conversational Interface
 Add LLM layer for natural language responses:
@@ -319,7 +319,7 @@ brain recall "passport" --category travel  # Only search travel memories
 
 ---
 
-## 📖 Learning Resources
+## Learning Resources
 
 If you want to dive deeper into the concepts:
 
@@ -337,7 +337,7 @@ If you want to dive deeper into the concepts:
 
 ---
 
-## 🐛 Debugging Tips
+## Debugging Tips
 
 ### Memory not recalling correctly?
 1. Check similarity scores: `brain recall --debug "query"`
@@ -355,7 +355,7 @@ If you want to dive deeper into the concepts:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This is a learning project! Feel free to:
 - Experiment with different embedding models

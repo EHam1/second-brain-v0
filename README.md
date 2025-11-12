@@ -1,19 +1,19 @@
-# 🧠 Second Brain v0
+# Second Brain v0
 
 Your personal semantic memory assistant. Remember anything, recall it naturally.
 
 > "Where did I put my passport?"  
 > → "You said: 'passport in the blue suitcase' on Oct 13, 8:02 PM"
 
-## ✨ Features
+## Features
 
-- **🔍 Semantic search**: Find memories even when worded differently
-- **⏰ Recency-aware**: Newer memories automatically prioritized  
-- **🔒 100% local & private**: No API calls, no internet required
-- **⚡ Fast**: Sub-second query responses
-- **🎯 Simple**: Clean CLI interface, no complexity
+- **Semantic search**: Find memories even when worded differently
+- **Recency-aware**: Newer memories automatically prioritized  
+- **100% local & private**: No API calls, no internet required
+- **Fast**: Sub-second query responses
+- **Simple**: Clean CLI interface, no complexity
 
-## 🎓 What You'll Learn
+## What You'll Learn
 
 This project is designed as a learning tool for understanding RAG (Retrieval Augmented Generation):
 
@@ -24,7 +24,7 @@ This project is designed as a learning tool for understanding RAG (Retrieval Aug
 
 Every file is heavily commented to explain not just *what* it does, but *why*.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -35,8 +35,8 @@ Every file is heavily commented to explain not just *what* it does, but *why*.
 
 ```bash
 # Clone the repository
-git clone https://github.com/hambone-8/second-brain-v0.git
-cd second-brain-v0
+git clone https://github.com/EHam1/external-brain-v0.git
+cd external-brain-v0
 
 # Create virtual environment (recommended)
 python3 -m venv venv
@@ -64,7 +64,7 @@ python -m cli.brain list
 python -m cli.brain stats
 ```
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Adding Memories
 
@@ -111,9 +111,9 @@ python -m cli.brain delete a3f2
 python -m cli.brain clear
 ```
 
-## 🎯 Real-World Examples
+## Real-World Examples
 
-### 📦 Moving House
+### Moving House
 
 ```bash
 python -m cli.brain add "winter clothes in box marked 'bedroom'"
@@ -124,7 +124,7 @@ python -m cli.brain add "important documents in blue folder on desk"
 python -m cli.brain recall "where are my winter coats?"
 ```
 
-### 🔑 Daily Items
+### Daily Items
 
 ```bash
 python -m cli.brain add "spare car key in kitchen drawer"
@@ -135,7 +135,7 @@ python -m cli.brain add "phone charger left at office, desk drawer"
 python -m cli.brain recall "where's my phone charger?"
 ```
 
-### 📅 Reminders & To-Dos
+### Reminders & To-Dos
 
 ```bash
 python -m cli.brain add "need to call dentist on Monday"
@@ -146,7 +146,7 @@ python -m cli.brain add "meeting notes in Google Doc titled 'Q4 Planning'"
 python -m cli.brain recall "when is Sarah's birthday?"
 ```
 
-### 🔄 Updating Locations
+### Updating Locations
 
 No need to delete or update! Just add new memories - recency handles it:
 
@@ -162,7 +162,7 @@ python -m cli.brain recall "where's my laptop?"
 # → "laptop in bedroom on desk" (from Tuesday)
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 Edit `config.py` to tune the system:
 
@@ -201,7 +201,7 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 To try a different model, change this to any [sentence-transformers model](https://www.sbert.net/docs/pretrained_models.html).
 
-## 🧪 Testing
+## Testing
 
 Run the test suite to verify everything works:
 
@@ -216,7 +216,7 @@ pytest tests/ --cov=core --cov-report=html
 pytest tests/test_memory.py::TestSemanticSearch -v
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 second-brain-v0/
@@ -235,7 +235,7 @@ second-brain-v0/
 └── README.md             # This file!
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Model Download Fails
 
@@ -280,7 +280,7 @@ If searches return poor results:
    - Increase `SIMILARITY_WEIGHT` for more relevance
    - Decrease `RECENCY_DECAY_RATE` to keep old memories relevant
 
-## 🗺️ Roadmap
+## Roadmap
 
 ### v0.1 - Current (Lite) ✅
 - ✅ Local semantic memory storage
@@ -306,27 +306,27 @@ If searches return poor results:
 - [ ] Proactive reminders
 - [ ] Mobile app
 
-## 🤝 Contributing
+## Contributing
 
 This is a learning project! Contributions welcome:
 
-- 🐛 Report bugs via issues
-- 💡 Suggest features
-- 🔧 Submit PRs for improvements
-- 📚 Improve documentation
+- Report bugs via issues
+- Suggest features
+- Submit PRs for improvements
+- Improve documentation
 
-## 📚 Learn More
+## Learn More
 
 - **Architecture Deep Dive**: See [ARCHITECTURE.md](ARCHITECTURE.md)
 - **Embeddings**: [Sentence Transformers](https://www.sbert.net/)
 - **Vector DB**: [ChromaDB Docs](https://docs.trychroma.com/)
 - **RAG Concepts**: [What is RAG?](https://www.anthropic.com/index/retrieval-augmented-generation)
 
-## 📝 License
+## License
 
 MIT License - feel free to use, modify, and learn from this project!
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Built with:
 - [sentence-transformers](https://www.sbert.net/) - Semantic embeddings
@@ -335,7 +335,7 @@ Built with:
 
 ---
 
-**Made with 🧠 for learning and productivity**
+**Made for learning and productivity**
 
 Questions? Issues? Check out the [Architecture docs](ARCHITECTURE.md) or open an issue!
 

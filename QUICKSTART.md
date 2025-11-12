@@ -1,12 +1,12 @@
-# 🚀 Quick Start Guide
+# Quick Start Guide
 
 Get up and running with Second Brain in 5 minutes!
 
-## 1️⃣ Setup (One Time)
+## 1. Setup (One Time)
 
 ```bash
 # Navigate to the project
-cd ~/Repositories/second-brain-v0
+cd ~/Repositories/external-brain-v0
 
 # Create virtual environment
 python3 -m venv venv
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 **First run note**: The embedding model (~80MB) will download automatically. This only happens once!
 
-## 2️⃣ Try It Out
+## 2. Try It Out
 
 ```bash
 # Add your first memory
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ./brain stats
 ```
 
-## 3️⃣ Real Usage Pattern
+## 3. Real Usage Pattern
 
 ### Morning Routine
 ```bash
@@ -72,7 +72,7 @@ pip install -r requirements.txt
 ./brain recall "who was I supposed to call?"
 ```
 
-## 4️⃣ Power User Tips
+## 4. Power User Tips
 
 ### Debug Mode
 See exactly how the scoring works:
@@ -98,7 +98,7 @@ Add memories faster:
 ./brain add "quick memory" --no-confirm
 ```
 
-## 5️⃣ Customization
+## 5. Customization
 
 Edit `config.py` to tune the system:
 
@@ -114,7 +114,7 @@ RECENCY_DECAY_RATE = 0.2
 CONFIDENCE_THRESHOLD = 0.5
 ```
 
-## 6️⃣ Testing
+## 6. Testing
 
 Verify everything works:
 ```bash
@@ -127,7 +127,7 @@ python core/vector_store.py
 python core/memory_manager.py
 ```
 
-## 📊 Example Session
+## Example Session
 
 ```bash
 $ ./brain add "passport in blue suitcase"
@@ -152,7 +152,7 @@ Storage location: /Users/you/Repositories/second-brain-v0/data/chroma
 Embedding model: all-MiniLM-L6-v2
 ```
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### "Module not found" error
 Make sure you activated the virtual environment:
@@ -163,7 +163,7 @@ source venv/bin/activate  # Run this first!
 ### "Command not found: ./brain"
 Make sure you're in the project directory:
 ```bash
-cd ~/Repositories/second-brain-v0
+cd ~/Repositories/external-brain-v0
 ```
 
 Or use the full command:
@@ -180,7 +180,7 @@ Try lowering the threshold:
 ./brain recall "query" --threshold 0.1
 ```
 
-## 🎯 Next Steps
+## Next Steps
 
 - Read [ARCHITECTURE.md](ARCHITECTURE.md) to understand how it works
 - Check [README.md](README.md) for complete documentation
@@ -188,7 +188,7 @@ Try lowering the threshold:
 - Experiment with `config.py` settings
 - Start using it daily!
 
-## 💡 Pro Tips
+## Pro Tips
 
 1. **Be descriptive**: "passport in blue suitcase" > "passport there"
 2. **Use natural language**: The system understands context
@@ -198,5 +198,5 @@ Try lowering the threshold:
 
 ---
 
-**You're all set! Start building your second brain! 🧠**
+**You're all set! Start building your second brain!**
 
