@@ -6,7 +6,7 @@ Get up and running with Second Brain in 5 minutes!
 
 ```bash
 # Navigate to the project
-cd ~/Repositories/external-brain-v0
+cd ~/Repositories/second-brain-v0
 
 # Create virtual environment
 python3 -m venv venv
@@ -163,7 +163,7 @@ source venv/bin/activate  # Run this first!
 ### "Command not found: ./brain"
 Make sure you're in the project directory:
 ```bash
-cd ~/Repositories/external-brain-v0
+cd ~/Repositories/second-brain-v0
 ```
 
 Or use the full command:

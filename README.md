@@ -35,8 +35,8 @@ Every file is heavily commented to explain not just *what* it does, but *why*.
 
 ```bash
 # Clone the repository
-git clone https://github.com/EHam1/external-brain-v0.git
-cd external-brain-v0
+git clone https://github.com/EHam1/second-brain-v0.git
+cd second-brain-v0
 
 # Create virtual environment (recommended)
 python3 -m venv venv

@@ -142,7 +142,7 @@ Your **Second Brain v0** is ready! Here's what we created:
 ### 1. Install & Test (5 minutes)
 
 ```bash
-cd ~/Repositories/external-brain-v0
+cd ~/Repositories/second-brain-v0
 
 # Create virtual environment
 python3 -m venv venv
